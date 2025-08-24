@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lotus Realty | South Pune Rentals & Sales</title>
+  <meta name="description" content="Lotus Realty specializes in renting and selling apartments across prime South Pune locations: NIBM Annex, Mohammed Wadi, Undri, Salunke Vihar, and Wanowrie." />
+  <link rel="icon" href="assets/favicon.jpg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lotus: {
+              50: '#f4f7f6',
+              100: '#e7efec',
+              200: '#cfe0d9',
+              300: '#a6c8ba',
+              400: '#6ea48e',
+              500: '#3e8267',
+              600: '#E75480',
+              700: '#C9A646',
+              800: '#1f4335',
+              900: '#1a382c'
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    /* Smooth scrolling */
+    html { scroll-behavior: smooth; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Lotus Realty",
+    "description": "Renting and selling apartments in South Pune: NIBM Annex, Mohammed Wadi, Undri, Salunke Vihar, Wanowrie.",
+    "areaServed": ["NIBM Annex","Mohammed Wadi","Undri","Salunke Vihar","Wanowrie","South Pune"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pune",
+      "addressRegion": "MH",
+      "addressCountry": "IN"
+    },
+    "url": "https://example.com",
+    "telephone": "+91-XXXXXXXXXX",
+    "sameAs": []
+  }
+  </script>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="#" class="flex items-center space-x-3">
+          <img src="assets/logo.jpg" alt="Lotus Realty" class="h-11 w-11">
+          <span class="font-bold text-1g tracking-wide">Lotus Realty</span>
+        </a>
+        <nav class="hidden md:flex items-center space-x-6">
+          <a href="#listings" class="hover:text-lotus-600">Listings</a>
+          <a href="#locations" class="hover:text-lotus-600">Locations</a>
+          <a href="#about" class="hover:text-lotus-600">About</a>
+          <a href="#contact" class="hover:text-lotus-600">Contact</a>
+        </nav>
+        <a href="https://wa.me/+918530999149" class="hidden md:inline-block px-4 py-2 rounded-xl bg-lotus-600 text-white hover:bg-lotus-700 transition">WhatsApp</a>
+        <button id="menuBtn" class="md:hidden p-2 rounded-lg border" aria-label="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+      <div id="mobileMenu" class="md:hidden hidden pb-4">
+        <div class="flex flex-col space-y-3">
+          <a href="#listings" class="hover:text-lotus-600">Listings</a>
+          <a href="#locations" class="hover:text-lotus-600">Locations</a>
+          <a href="#about" class="hover:text-lotus-600">About</a>
+          <a href="#contact" class="hover:text-lotus-600">Contact</a>
+          <a href="https://wa.me/+918530999149" class="px-3 py-2 rounded-xl bg-lotus-600 text-white w-max">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0">
+      <div class="absolute inset-0 bg-gradient-to-t from-white via-white/70 to-transparent"></div>
+    </div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
+      <div class="max-w-3xl">
+        <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight text-lotus-800">Rent & Buy Apartments in South Pune</h1>
+        <p class="mt-4 text-lg text-gray-700">We specialize in renting and selling apartments across prime South Pune locations including <strong>NIBM Annex</strong>, <strong>Mohammed Wadi</strong>, <strong>Undri</strong>, <strong>Salunke Vihar</strong>, and <strong>Wanowrie</strong>.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#listings" class="px-5 py-3 rounded-xl bg-lotus-600 text-white hover:bg-lotus-700 transition">Browse Listings</a>
+          <a href="#contact" class="px-5 py-3 rounded-xl border border-lotus-600 text-lotus-700 hover:bg-lotus-50 transition">List Your Property</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick search -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-10">
+    <div class="bg-white rounded-2xl shadow-xl p-5">
+      <form id="searchForm" class="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div>
+          <label class="block text-sm font-medium mb-1">Location</label>
+          <select id="filterLocation" class="w-full border rounded-xl p-2.5">
+            <option value="">Any</option>
+            <option>NIBM Annex</option>
+            <option>Mohammed Wadi</option>
+            <option>Undri</option>
+            <option>Salunke Vihar</option>
+            <option>Wanowrie</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Type</label>
+          <select id="filterType" class="w-full border rounded-xl p-2.5">
+            <option value="">Any</option>
+            <option>Rent</option>
+            <option>Sale</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-1">Bedrooms</label>
+          <select id="filterBhk" class="w-full border rounded-xl p-2.5">
+            <option value="">Any</option>
+            <option>1 BHK</option>
+            <option>2 BHK</option>
+            <option>3 BHK</option>
+            <option>4 BHK</option>
+          </select>
+        </div>
+        <div class="flex items-end">
+          <button class="w-full px-4 py-2.5 rounded-xl bg-lotus-600 text-white hover:bg-lotus-700">Search</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Listings -->
+  <section id="listings" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <div class="flex items-end justify-between gap-4">
+      <div>
+        <h2 class="text-2xl font-bold">Featured Listings</h2>
+        <p class="text-gray-600">Curated homes across South Pune.</p>
+      </div>
+      <a href="#contact" class="px-4 py-2 rounded-xl border border-gray-300 hover:bg-gray-50">Request a Custom Search</a>
+    </div>
+
+    <div id="cards" class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- JS injects cards here -->
+    </div>
+  </section>
+
+  <!-- Locations -->
+  <section id="locations" class="bg-gray-50 border-y">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <h2 class="text-2xl font-bold">We serve these prime locations</h2>
+      <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        <div class="p-4 bg-white rounded-2xl border">
+          <h3 class="font-semibold">NIBM Annex</h3>
+          <p class="text-sm text-gray-600 mt-1">Modern gated societies and great connectivity.</p>
+        </div>
+        <div class="p-4 bg-white rounded-2xl border">
+          <h3 class="font-semibold">Mohammed Wadi</h3>
+          <p class="text-sm text-gray-600 mt-1">Upcoming hub with new developments.</p>
+        </div>
+        <div class="p-4 bg-white rounded-2xl border">
+          <h3 class="font-semibold">Undri</h3>
+          <p class="text-sm text-gray-600 mt-1">Green surroundings, family-friendly living.</p>
+        </div>
+        <div class="p-4 bg-white rounded-2xl border">
+          <h3 class="font-semibold">Salunke Vihar</h3>
+          <p class="text-sm text-gray-600 mt-1">Established residential area with amenities.</p>
+        </div>
+        <div class="p-4 bg-white rounded-2xl border">
+          <h3 class="font-semibold">Wanowrie</h3>
+          <p class="text-sm text-gray-600 mt-1">Central & well-connected neighborhood.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-2xl font-bold">About Lotus Realty</h2>
+        <p class="mt-3 text-gray-700">We are a South Pune focused real estate firm helping families and professionals rent and buy homes that match their lifestyle and budget. Our local expertise across NIBM Annex, Mohammed Wadi, Undri, Salunke Vihar and Wanowrie ensures faster matching, transparent negotiations, and a smooth move-in.</p>
+        <ul class="mt-4 space-y-2 text-gray-700 list-disc list-inside">
+          <li>Verified listings & honest pricing</li>
+          <li>Owner & tenant onboarding assistance</li>
+          <li>Home loan and paperwork guidance</li>
+        </ul>
+      </div>
+      <div class="rounded-2xl overflow-hidden border">
+        <iframe class="w-full h-72" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15137.209103064099!2d73.909!3d18.469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eaf9b2b9f5d9%3A0x0!2sSouth%20Pune!5e0!3m2!1sen!2sin!4v1680000000000"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-gray-50 border-t">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h2 class="text-2xl font-bold">Contact Us</h2>
+          <p class="mt-2 text-gray-700">Looking to rent, buy, or list your property in South Pune? Send us a message.</p>
+          <div class="mt-4 space-y-2 text-gray-700">
+            <p><strong>Phone:</strong> +91-85*****149</p>
+            <p><strong>Email:</strong> LotusRealtyOnly@Gmail.com</p>
+            <p><strong>Hours:</strong> All day, 10:00–19:00 IST</p>
+          </div>
+        </div>
+		<form id="contactForm" class="bg-white p-6 rounded-2xl border space-y-4" action="https://formspree.io/f/mzzaprvn" method="POST">
+          <div>
+            <label class="block text-sm font-medium mb-1">Name</label>
+            <input name="name" required class="w-full border rounded-xl p-2.5" placeholder="Your name">
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium mb-1">Phone</label>
+              <input name="phone" class="w-full border rounded-xl p-2.5" placeholder="+91-">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1">Email</label>
+              <input name="email" type="email" class="w-full border rounded-xl p-2.5" placeholder="you@example.com">
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1">Message</label>
+            <textarea name="message" rows="4" class="w-full border rounded-xl p-2.5" placeholder="Tell us what you need"></textarea>
+          </div>
+          <button class="w-full px-4 py-2.5 rounded-xl bg-lotus-600 text-white hover:bg-lotus-700">Send Message</button>
+          <p class="text-xs text-gray-500">This form uses Formspree; replace the action URL with your own endpoint.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-gray-600">© <span id="year"></span> Lotus Realty, South Pune. All rights reserved.</p>
+      <div class="flex items-center gap-3 text-sm">
+        <a href="#" class="hover:text-lotus-600">Privacy</a>
+        <span>•</span>
+        <a href="#" class="hover:text-lotus-600">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
