@@ -8,7 +8,7 @@ const listings = [
     bhk: "2 BHK",
     price: "₹32,000/mo",
     area: "835 sq ft",
-    image: "src/assets/images/Img1.webp",
+    image: "https://lotusrealty.blob.core.windows.net/assets/images/Img1.webp",
     features: ["Modular Kitchen", "Balcony", "Covered Parking", "Gated Security", "Club House", "Gym", "Kids Playing Area"]
   },
   {
@@ -19,7 +19,7 @@ const listings = [
     bhk: "3 BHK",
     price: "₹38,000/mo",
     area: "1250 sq ft",
-    image: "src/assets/images/Img2.jpg",
+    image: "https://lotusrealty.blob.core.windows.net/assets/images/Img2.jpg",
     features: ["Modular Kitchen", "Balcony", "Covered Parking", "Gated Security", "Club House", "Gym", "Kids Playing Area"]
   },
   {
@@ -30,7 +30,7 @@ const listings = [
     bhk: "1 BHK",
     price: "₹48 Lakh",
     area: "685 sq ft",
-    image: "src/assets/images/Img3.jpg",
+    image: "https://lotusrealty.blob.core.windows.net/assets/images/Img3.jpg",
     features: ["Modular Kitchen", "Balcony", "Covered Parking", "Gated Security", "Club House", "Gym", "Kids Playing Area"]
   },
   {
@@ -41,7 +41,7 @@ const listings = [
     bhk: "2 BHK",
     price: "₹85 Lakh",
     area: "835 sq ft",
-    image: "src/assets/images/Img4.jpg",
+    image: "https://lotusrealty.blob.core.windows.net/assets/images/Img4.jpg",
     features: ["Modular Kitchen", "Balcony", "Covered Parking", "Gated Security", "Club House", "Gym", "Kids Playing Area"]
   },
   {
@@ -52,7 +52,7 @@ const listings = [
     bhk: "2 BHK",
     price: "₹30,000/mo",
     area: "880 sq ft",
-    image: "src/assets/images/Img5.jpg",
+    image: "https://lotusrealty.blob.core.windows.net/assets/images/Img5.jpg",
     features: ["Modular Kitchen", "AC", "Balcony", "Covered Parking", "Gated Security", "Club House", "Gym", "Kids Playing Area"]
   },
   {
@@ -63,7 +63,7 @@ const listings = [
     bhk: "2 BHK",
     price: "₹85 Lakh",
     area: "835 sq ft",
-    image: "src/assets/images/Img6.webp",
+    image: "https://lotusrealty.blob.core.windows.net/assets/images/Img6.webp",
     features: ["Modular Kitchen", "Balcony", "Covered Parking", "Gated Security", "Club House", "Gym", "Kids Playing Area"]
   }
 ];
