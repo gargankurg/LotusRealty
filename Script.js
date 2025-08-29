@@ -34,7 +34,7 @@ const listings = [
     features: ["Modular Kitchen", "Balcony", "Covered Parking", "Gated Security", "Club House", "Gym", "Kids Playing Area"]
   },
   {
-    id: 1,
+    id: 4,
     title: "2 BHK | NIBM Annex ",
     location: "NIBM Annex",
     type: "Sale",
@@ -56,7 +56,7 @@ const listings = [
     features: ["Modular Kitchen", "AC", "Balcony", "Covered Parking", "Gated Security", "Club House", "Gym", "Kids Playing Area"]
   },
   {
-    id: 1,
+    id: 6,
     title: "2 BHK | NIBM Annex | Semi-Furnished",
     location: "NIBM Annex",
     type: "Sale",
@@ -65,6 +65,17 @@ const listings = [
     area: "835 sq ft",
     image: "https://lotusrealty.blob.core.windows.net/assets/images/Img6.webp",
     features: ["Modular Kitchen", "Balcony", "Covered Parking", "Gated Security", "Club House", "Gym", "Kids Playing Area"]
+  },
+  {
+    id: 7,
+    title: "2 BHK | Undri ",
+    location: "NIBM Rd",
+    type: "Rent",
+    bhk: "2 BHK",
+    price: "₹30,000/mo",
+    area: "825 sq ft",
+    image: "https://lotusrealty.blob.core.windows.net/assets/images/Unnamed_Undri.webp",
+    features: ["Modular Kitchen", "Balcony", "Covered Parking", "Gated Security", "Club House", "Gym", "Kids Playing Area", "Swimming Pool"]
   }
 ];
 
