@@ -74,7 +74,7 @@ const listings = [
     bhk: "2 BHK",
     price: "₹30,000/mo",
     area: "825 sq ft",
-    image: "https://lotusrealty.blob.core.windows.net/assets/images/Unnamed_Undri.webp",
+    image: "https://lotusrealty.blob.core.windows.net/assets/images/images7.jpg",
     features: ["Modular Kitchen", "Balcony", "Covered Parking", "Gated Security", "Club House", "Gym", "Kids Playing Area", "Swimming Pool"]
   }
 ];
