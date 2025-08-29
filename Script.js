@@ -69,7 +69,7 @@ const listings = [
   {
     id: 7,
     title: "2 BHK | Undri ",
-    location: "NIBM Rd",
+    location: "Undri",
     type: "Rent",
     bhk: "2 BHK",
     price: "₹30,000/mo",
